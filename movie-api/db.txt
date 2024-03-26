@@ -1,0 +1,17 @@
+Use this commands to create the db for the REST API
+
+CREATE DATABASE movies;
+
+USE movies;
+
+CREATE TABLE genres (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE movies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL UNIQUE,
+    genre_id INT,
+    FOREIGN KEY (genre_id) REFERENCES genres(id)
+);
