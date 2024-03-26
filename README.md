@@ -1,3 +1,26 @@
+# Movie API
+
+This REST API allows you to manage genres and movies in a database.
+
+## Database Structure
+
+Please refer to the `db.txt` file for the database structure.
+
+## Installation
+
+1. Clone the repository to your local machine.
+2. Navigate to the `movie-api` folder.
+3. Run `npm install` to install dependencies.
+
+## Available Commands
+
+### Genres
+
+#### Get all genres
+
+```bash
+curl -X GET http://localhost:3000/genres
+
 Database structure is writen in the db.txt file
 
 follow the npm instructions inside the movie-api folder
